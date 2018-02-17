@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.f1.controller.TrackController">
+   <children>
+      <ImageView fx:id="track" fitHeight="700.0" fitWidth="1200.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@monza.png" />
+         </image></ImageView>
+      <ImageView fitHeight="118.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@monza_header.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bolidBlue" fitHeight="45.0" fitWidth="60.0" layoutX="668.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" visible="false">
+         <image>
+            <Image url="@racing-car-blue.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bolidBluesky" fitHeight="45.0" fitWidth="60.0" layoutX="713.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" visible="false">
+         <image>
+            <Image url="@racing-car-bluesky.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bolidFuchsia" fitHeight="45.0" fitWidth="60.0" layoutX="758.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" visible="false">
+         <image>
+            <Image url="@racing-car-fuchsia.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bolidGray" fitHeight="45.0" fitWidth="60.0" layoutX="803.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" visible="false">
+         <image>
+            <Image url="@racing-car-gray.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bolidGreen" fitHeight="45.0" fitWidth="60.0" layoutX="848.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" visible="false">
+         <image>
+            <Image url="@racing-car-green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bolidRed" fitHeight="45.0" fitWidth="60.0" layoutX="893.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" visible="false">
+         <image>
+            <Image url="@racing-car-red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bolidYellow" fitHeight="45.0" fitWidth="60.0" layoutX="938.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" visible="false">
+         <image>
+            <Image url="@racing-car-yellow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonExit" layoutX="646.0" layoutY="322.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onActionButtonExit" prefWidth="100.0" text="Zakończ" />
+      <GridPane layoutX="779.0" layoutY="125.0" prefHeight="362.0" prefWidth="357.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="1.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="bolidBlue1" fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@racing-car-blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bolidBluesky1" fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@racing-car-bluesky.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bolidFuchsia1" fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@racing-car-fuchsia.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bolidGray1" fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@racing-car-gray.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bolidGreen1" fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@racing-car-green.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bolidRed1" fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@racing-car-red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bolidYellow1" fitHeight="45.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <image>
+                  <Image url="@racing-car-yellow.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="fuelBlue" prefHeight="18.0" prefWidth="80.0" progress="1.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@service_fuel.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@service_tires.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="tiresBlue" prefHeight="18.0" prefWidth="80.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@service_pitstop.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pitstopBlue" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@service_warning.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="fuelBluesky" prefHeight="18.0" prefWidth="80.0" progress="1.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <ProgressBar fx:id="tiresBluesky" prefHeight="18.0" prefWidth="80.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <ImageView fx:id="pitstopBluesky" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@service_warning.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="fuelFuchsia" prefHeight="18.0" prefWidth="80.0" progress="1.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <ProgressBar fx:id="tiresFuchsia" prefHeight="18.0" prefWidth="80.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <ImageView fx:id="pitstopFuchsia" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@service_warning.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="fuelGray" prefHeight="18.0" prefWidth="80.0" progress="1.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <ProgressBar fx:id="tiresGray" prefHeight="18.0" prefWidth="80.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <ImageView fx:id="pitstopGray" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@service_warning.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="fuelGreen" prefHeight="18.0" prefWidth="80.0" progress="1.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <ProgressBar fx:id="tiresGreen" prefHeight="18.0" prefWidth="80.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <ImageView fx:id="pitstopGreen" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@service_warning.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="fuelYellow" prefHeight="18.0" prefWidth="80.0" progress="1.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <ImageView fx:id="pitstopYellow" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <image>
+                  <Image url="@service_warning.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pitstopRed" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@service_warning.png" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="tiresYellow" prefHeight="18.0" prefWidth="80.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <ProgressBar fx:id="fuelRed" prefHeight="18.0" prefWidth="80.0" progress="1.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <ProgressBar fx:id="tiresRed" prefHeight="18.0" prefWidth="80.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Label fx:id="lapsBlue" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lapsBluesky" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lapsFuchsia" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lapsGray" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lapsGreen" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lapsRed" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lapsYellow" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lapsBlue1" text="LAP" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="buttonStart" layoutX="646.0" layoutY="283.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#onActionButtonStart" prefWidth="100.0" text="Wystartuj" />
+      <ImageView fx:id="pitstopTrafficLight" fitHeight="59.0" fitWidth="21.0" layoutX="507.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true" rotate="-113.0">
+         <image>
+            <Image url="@trafficsignal_green.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lapsBlue11" layoutX="592.0" layoutY="171.0" text="ilość okrążeń:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="lapsCount" editable="true" layoutX="595.0" layoutY="206.0" />
+   </children>
+</AnchorPane>
